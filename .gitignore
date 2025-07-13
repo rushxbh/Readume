@@ -1,0 +1,36 @@
+# Virtual Environment
+venv/
+env/
+.env
+
+# CSV files (exclude all from Git tracking)
+*.csv
+data/*.csv
+frontend/*.csv
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Models
+
+models/*.h5
+models/*.bin
+
+# Data
+data/*.csv
+data/*.json
+uploads/*
+
+# Node
+frontend/node_modules/
+frontend/.next/
+frontend/.env*
+
+# IDE
+.vscode/
+.idea/
+
+# Misc
+*.log
+.DS_Store

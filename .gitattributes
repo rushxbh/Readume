@@ -1,0 +1,23 @@
+# Text files - standard git handling
+* text=auto
+*.js text eol=lf
+*.py text eol=lf
+*.md text
+*.txt text
+
+# Track large binary files in LFS
+*.pkl filter=lfs diff=lfs merge=lfs -text
+*.h5 filter=lfs diff=lfs merge=lfs -text
+*.bin filter=lfs diff=lfs merge=lfs -text
+*.pdf filter=lfs diff=lfs merge=lfs -text
+
+# Track large CSV files with LFS
+data/job_descriptions.csv filter=lfs diff=lfs merge=lfs -text
+data/linkedin_jobs.csv filter=lfs diff=lfs merge=lfs -text
+data/data_jobs.csv filter=lfs diff=lfs merge=lfs -text
+frontend/linkedin_jobs.csv filter=lfs diff=lfs merge=lfs -text
+frontend/linkedin_jobs_india.csv filter=lfs diff=lfs merge=lfs -text
+
+# Keep other CSV and JSON files as regular text files
+*.csv text
+*.json text
