@@ -226,7 +226,7 @@ def generate_response(prompt):
     return response
 
 # Update your chat route
-genai.configure(api_key='AIzaSyB0gK_1LQZ4TdVKARIOe0J3xUqYM6l6-vg')
+genai.configure(api_key='YOUR_API_KEY')
 model = genai.GenerativeModel('gemini-2.0-flash')
 
 
